@@ -1,0 +1,28 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    user-select: none;
+}
+body {
+    background-color: #161125;
+}
+
+input,textarea{
+    outline:none;
+    border:4px #3b3255 solid;
+    background-color: #27203b;
+    border-radius: 5px;
+    resize: none;
+}
+textarea {
+    width: 400px;
+    height: 200px;
+}
+button {
+    width:100px;
+    height:80px;
+    margin: 7px;
+    border:4px #ffffff solid;
+    border-radius: 5px;
+    background-color: transparent;
+}
