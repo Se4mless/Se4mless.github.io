@@ -5,6 +5,8 @@
 }
 body {
     background-color: #161125;
+    width:100vw;
+    height: 100vh;
 }
 
 input,textarea{
@@ -27,4 +29,14 @@ button {
     border:4px #ffffff solid;
     border-radius: 15px;
     background-color: transparent;
+}
+#tool {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:40px;
+    background-color: #1c1729;
+    width: fit-content;
+    height: fit-content;
 }
