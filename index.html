@@ -5,11 +5,11 @@
 	</head>
 	<body>
 		<div id="tool">
-			<textarea placeholder= "Paste Ciphertext" ></textarea>
+			<textarea placeholder= "Paste Ciphertext" id="cypher"></textarea>
 			<br>
 			<b>Type The Expected Key Length: </b><input type="text">
 			<br>
-			<button>Execute</button>
+			<button onclick="decrypt()">Execute</button>
 			<br>
 			<textarea readonly placeholder="Output"></textarea>
 		</div>
