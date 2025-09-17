@@ -19,5 +19,13 @@ function decrypt(){
     let expected = int(document.querySelector("input").value);
     let text = String(document.querySelector("#cypher").value)
     text = text.replace(/\s+/g, '')
-    let split = text.match(/.{1,4}/g) || []
+    let split = []
+    let current = "";
+    for(let i = 0; i < text.length; i++) {
+        current += text[i]
+        if(i % expected == 0) {
+            split.push(current)
+            current = ""
+        }
+    }
 }
