@@ -28,4 +28,7 @@ function decrypt(){
             current = ""
         }
     }
+    split.forEach(section => {
+        
+    })
 }
