@@ -30,6 +30,7 @@ function decrypt() {
     let text = String(document.querySelector("#cypher").value);
     let result = text;
     text = text.replace(/\s+/g, '');
+    text = text.toLowerCase()
     let split = [];
     for (let i = 0; i < text.length; i += expected) {
         split.push(text.slice(i, i + expected));
@@ -49,8 +50,13 @@ function decrypt() {
             //check if element is in alphabet
             if (!alphabet.includes(element)) continue;
             // Count the shift needed to turn element into 'e'
-            let shiftAmount = getRequiredShift(element, "e");
-            mostCommon[index][alphabet[shiftAmount]]++;
+            let shiftAmountE = getRequiredShift(element, "e");
+            mostCommon[index][alphabet[shiftAmountE]]+=12;
+            let shiftAmountT = getRequiredShift(element,"t");
+            mostCommon[index][alphabet[shiftAmountT]]+=9;
+            let shiftAmountA = getRequiredShift(element,"a");
+            mostCommon[index][alphabet[shiftAmountA]]+=8
+
         }
         
     });
@@ -73,7 +79,7 @@ function decrypt() {
 
 
 
-AAA
+
 
 
 
