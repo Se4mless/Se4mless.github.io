@@ -7,11 +7,11 @@
 		<div id="tool">
 			<textarea placeholder= "Paste Ciphertext" id="cypher"></textarea>
 			<br>
-			<b>Type The Expected Key Length: </b><input type="text">
+			<b>Type The Expected Key Length: </b><input type="text" id="keylen">
 			<br>
-			<button onclick="decrypt()">Execute</button>
+			<button onclick="solve()">Execute</button>
 			<br>
-			<textarea readonly placeholder="Output"></textarea>
+			<textarea id="output" readonly placeholder="Output"></textarea>
 		</div>
 
 	</body>

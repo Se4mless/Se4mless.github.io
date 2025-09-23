@@ -10,6 +10,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+
 }
 
 input,textarea{
@@ -70,7 +72,7 @@ button:hover{
     width:100%;
     height: 100%;
     position: absolute;
-    background-image: conic-gradient(from var(--angle),red,green,blue,red);
+    background-image: conic-gradient(from var(--angle),#2e5274,#231b3f,#410b7e,#2e5274);
     animation: 6s spin linear infinite;
 }
 @keyframes spin {
