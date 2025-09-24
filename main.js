@@ -127,7 +127,10 @@ function guessKeyForLength(text, keyLen) {
 function decrypt(text,possibleKeyChars) {
     let cipherKeys = {}
     let max = Math.pow(possibleKeyChars[0].length,possibleKeyChars.length)
-
+    let counts = []
+    counts.length = possibleKeyChars.length
+    counts.fill(0)
+    
             
 
          
