@@ -1,3 +1,23 @@
+// Rainbow Mode
+let rainbowCheck = document.querySelector("#check")
+if(rainbowCheck instanceof HTMLInputElement) {
+    rainbowCheck.addEventListener("input", e => {
+        if (rainbowCheck.checked) {
+            document.getElementById("tool").classList.add("rainbow")
+        }else {
+            document.getElementById("tool").classList.remove("rainbow")
+        }
+    });
+}
+
+
+
+
+
+
+
+
+
 // Improved Vigenere key guesser
 const alphabet = 'abcdefghijklmnopqrstuvwxyz';
 const ALPHA_LEN = alphabet.length;

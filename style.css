@@ -1,3 +1,25 @@
+/* Custom style for the rainbow mode checkbox */
+#check {
+    margin-top: 40px;
+    width: 28px;
+    height: 28px;
+    border-radius: 7px;
+    /* Make BG Dark*/
+    box-shadow: 0 0 8px 2px #00000088;
+    transition: box-shadow 0.3s;
+    outline: none;
+    cursor: pointer;
+    background-color: #000;
+    appearance: unset;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+
+}
+#check:checked {
+    background-color: white;
+    box-shadow: 0 0 16px 4px #FFFFFF88;
+}
 * {
     font-family: Arial, Helvetica, sans-serif;
     color:white;
@@ -59,6 +81,7 @@ button:hover{
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5);
     position: relative;
 }
+
 @property --angle {
     syntax: "<angle>";
     initial-value: 0deg;
@@ -74,6 +97,9 @@ button:hover{
     position: absolute;
     background-image: conic-gradient(from var(--angle),#2e5274,#231b3f,#410b7e,#2e5274);
     animation: 6s spin linear infinite;
+}
+.rainbow#tool::after, .rainbow#tool::before {
+    background-image: conic-gradient(from var(--angle),red,orange,yellow,green,blue,indigo,violet,red);
 }
 @keyframes spin {
     from{
