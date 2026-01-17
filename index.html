@@ -1,21 +1,64 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div id="tool">
-			<textarea placeholder= "Paste Ciphertext" id="cypher"></textarea>
-			<br>
-			<b>Type The Expected Key Length: </b><input type="text" id="keylen">
-			<br>
-			<button onclick="solve()">Execute</button>
-			<br>
-			<textarea id="output" readonly placeholder="Output"></textarea>
-			<input type="checkbox" id="check">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="topbar">
+        <h1>Welcome To My Homepage!</h1>
 
-		</div>
+    </div>
+    <div id="projects">
+        <h1>Projects:</h1>
+        <div id="projectlist"> 
+            <div id="container">
 
-	</body>
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                            <img src="dropdown_arrow.png" alt="">
+                            <h2>Tools</h2>
+                    </div>
+                    <div class="dropdown-body">
+                        <div class="line">
+
+                        </div>
+                        <div class="contents">
+                            <div class="project" onclick="document.location.href = '/vigenere'">
+                                <h3>Vigenere</h3>
+                                <h3>Solver</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-header">
+                            <img src="dropdown_arrow.png" alt="">
+                            <h2>Games</h2>
+                    </div>
+                    <div class="dropdown-body">
+                        <div class="line">
+
+                        </div>
+                        <div class="contents">
+                            <h3 class="not-here">Nothing Here Yet :(</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>       
+
+        </div>
+    </div>
+</body>
 </html>
-<script src="main.js"></script>
+<script src="script.js"></script>
